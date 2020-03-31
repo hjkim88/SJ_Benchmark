@@ -2,7 +2,7 @@
 #   File name : Subread_bulk_rnaseq_PC.R
 #   Author    : Hyunjin Kim
 #   Date      : Mar 30, 2020
-#   Email     : hk2990@cumc.columbia.edu
+#   Email     : hkim8@stjude.org
 #   Purpose   : Do alignment and make Bam files from fastq.gz files - benchmarking
 #
 #   * THIS CODE SHOULD BE RUN ON LINUX

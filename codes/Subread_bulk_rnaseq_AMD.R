@@ -2,7 +2,7 @@
 #   File name : Subread_bulk_rnaseq_AMD.R
 #   Author    : Hyunjin Kim
 #   Date      : Mar 30, 2020
-#   Email     : hk2990@cumc.columbia.edu
+#   Email     : hkim8@stjude.org
 #   Purpose   : Do alignment and make Bam files from fastq.gz files - benchmarking
 #
 #   * THIS CODE SHOULD BE RUN ON LINUX
@@ -57,11 +57,11 @@ benchmark <- function(fastqgzPath1="/home/hkim8/SJ_Benchmark/data/FASTQ/ER_low_3
   
   ### Benchmark
   results <- microbenchmark(
-    PC_Subread = align(index=referenceIdxPath,
-                       readfile1=fastqgzPath1,
-                       readfile2=fastqgzPath2,
-                       output_file=paste0(outputDir, "/bam_files/", sample_name, ".bam"),
-                       nthreads = 4),
+    AMD_Subread = align(index=referenceIdxPath,
+                        readfile1=fastqgzPath1,
+                        readfile2=fastqgzPath2,
+                        output_file=paste0(outputDir, "/bam_files/", sample_name, ".bam"),
+                        nthreads = 4),
     times = 10)
   
   ### save the result
