@@ -7,6 +7,11 @@
 #
 #   * THIS CODE SHOULD BE RUN ON LINUX
 #
+#   bsub -P interactive -q rhel7_interactive -Is bash -R "rusage[mem=10000]"
+#   export LANG=en_US.UTF-8
+#   module load R/3.6.1
+#   R
+#
 #   * THIS IS MOUSE DATA, HENCE MM10 WILL BE USED AS REFERENCE
 #
 #   Instruction
